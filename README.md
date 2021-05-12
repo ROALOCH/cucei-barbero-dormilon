@@ -14,4 +14,4 @@ Para ejecutar el programa simplemente abra el .exe o la solución en Visual Stud
 
 ### Licencia
 
-[MIT]()
+[MIT](https://github.com/ROALOCH/cucei-barbero-dormilon/blob/main/LICENSE)
