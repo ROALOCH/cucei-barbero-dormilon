@@ -14,7 +14,10 @@ namespace BarberoDormilon
     public partial class HomeScreen : Form
     {
         int nClients = 0;
-        int haircutDuration = 2000;
+
+        // Duration in Milliseconds
+        int haircutMinDuration = 1000;
+        int haircutMaxDuration = 4000;
 
         String colorEmpty = "YellowGreen";
         String colorOccupied = "DarkRed";
@@ -23,6 +26,8 @@ namespace BarberoDormilon
         String msgBussy = "TRABAJANDO";
 
         String bussyMsg = "¡ESTA LLENO! REGRESO LUEGO";
+
+        Random randomInt = new Random();
 
         public HomeScreen(int nClients)
         {
@@ -112,21 +117,6 @@ namespace BarberoDormilon
             WorkerBarber.RunWorkerAsync();
         }
 
-        private void barberStartWorking()
-        {
-            if (nClients > 0)
-            {
-                WorkerBarber.ReportProgress(1);
-                dequeue();
-                Thread.Sleep(haircutDuration);
-            }
-            else
-            {
-                WorkerBarber.ReportProgress(0);
-            }
-
-        }
-
         private void BTN_Exit_Click(object sender, EventArgs e)
         {
             WorkerBarber.CancelAsync();
@@ -137,6 +127,22 @@ namespace BarberoDormilon
             BTN_NewClient.Enabled = false;
         }
 
+        private void barberStartWorking()
+        {
+            if (nClients > 0)
+            {
+                WorkerBarber.ReportProgress(1);
+                dequeue();
+
+                int haircutDuration = randomInt.Next(haircutMinDuration, haircutMaxDuration);
+                Thread.Sleep(haircutDuration);
+            }
+            else
+            {
+                WorkerBarber.ReportProgress(0);
+            }
+
+        }
 
         private void WorkerBarber_DoWork(object sender, DoWorkEventArgs e)
         {

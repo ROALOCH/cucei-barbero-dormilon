@@ -1,0 +1,11 @@
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\bin\Release\BarberoDormilon.exe.config
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\bin\Release\BarberoDormilon.exe
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\bin\Release\BarberoDormilon.pdb
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.csprojAssemblyReference.cache
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.HomeScreen.resources
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.BarberoDormilon.resources
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.Properties.Resources.resources
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.csproj.GenerateResource.cache
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.csproj.CoreCompileInputs.cache
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.exe
+C:\Users\Rodrigo Ochoa\source\repos\BarberoDormilon\obj\Release\BarberoDormilon.pdb
